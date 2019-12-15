@@ -11,12 +11,11 @@ int reverse(int n) {
 }
 
 int main() {
+	int n, rev_n;
 	int largest = 0;
-	int n;
-	int rev_n;
 
 	for(int i = 100; i <= 999; i++) {
-		for(int j = 100; j < 999; j++) {
+		for(int j = 100; j <= 999; j++) {
 			n = i*j;
 			rev_n = reverse(n);
 			if(n == rev_n && n > largest) {
